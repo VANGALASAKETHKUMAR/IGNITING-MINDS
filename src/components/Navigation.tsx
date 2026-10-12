@@ -317,6 +317,14 @@ export default function Navigation({ currentPage, navigate }: Props) {
               {link('Facilities', 'facilities')}
               {link('Resources', 'resources')}
               {link('Careers', 'careers')}
+              <a
+                href="/documents/Terms%20%26%20conditions%20to%20suppliers.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-sm font-medium tracking-wide transition-colors duration-150 whitespace-nowrap ${linkFocus} text-steel hover:text-white`}
+              >
+                Supplier
+              </a>
             </div>
 
             <div className="flex items-center gap-3">
@@ -478,6 +486,17 @@ export default function Navigation({ currentPage, navigate }: Props) {
                   </svg>
                 </a>
               ))}
+              <a
+                href="/documents/Terms%20%26%20conditions%20to%20suppliers.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex w-full items-center justify-between py-3.5 text-sm transition-colors border-b border-border-dark ${linkFocus} text-steel hover:text-white`}
+              >
+                Supplier
+                <svg viewBox="0 0 16 16" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M5 8h6M8 5l3 3-3 3" />
+                </svg>
+              </a>
               <a
                 href={hrefFor('quote')}
                 onClick={go('quote')}
